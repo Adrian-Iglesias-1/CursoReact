@@ -1,10 +1,14 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
+import CartWidget from './CartWidget'
+
 
 
 function Navbar() {
-    return (
-        <div>
+    return ( 
+      <header id="main-header">
+       
+          
             <h1>Titulo</h1>
             <Nav
   activeKey="/home"
@@ -24,8 +28,10 @@ function Navbar() {
       Disabled
     </Nav.Link>
   </Nav.Item>
-</Nav>
-        </div>
+</Nav> 
+
+        <CartWidget/>
+        </header>
     )
 }
 

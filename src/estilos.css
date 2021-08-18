@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body , #root{
+
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black!important;
+}
+
+#main-header{
+
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #2ca!important;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
