@@ -9,13 +9,14 @@ import ItemListContainer from './components/ItemListContainer';
 
 
 
+
 function App() {
     
     return(
        <>
         <NavBar  />
         <ItemListContainer hardware= "placa de videos nvidia 1070" precio= {50000}/>
-       
+        
        
         
        </>
