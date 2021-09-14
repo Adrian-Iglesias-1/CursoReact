@@ -1,38 +1,33 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import CartWidget from './CartWidget'
+import {Link, BrowserRouter} from 'react-router-dom'
 
 
 
 function Navbar() {
-    return ( 
+    return (
       <header id="main-header">
-       
+        <Link to="/">
+        <h1>CompuGamer</h1>
+        </Link>
+        <Nav>
+     
+          <Nav.Item>
+          <Link to="/" className="nav-link">Inicio</Link>
+          </Nav.Item>
+          <Nav.Item>
+          <Link to="/category/1" className="nav-link">Componentes</Link>
+          </Nav.Item>
+          <Nav.Item>
+          <Link to="/category/2" className="nav-link">PC armardas</Link>
+          </Nav.Item>
           
-            <h1>Titulo</h1>
-            <Nav
-  activeKey="/home"
-  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
->
-  <Nav.Item>
-    <Nav.Link href="/home">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-</Nav> 
+        </Nav>
 
-        <CartWidget/>
-        </header>
-    )
+        <CartWidget />
+      </header>
+    );
 }
 
 export default Navbar

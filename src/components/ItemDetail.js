@@ -1,11 +1,14 @@
-const ItemDetail = ({producto}) => {
-    return (
+const ItemDetail = ({productos}) => {
+  console.log(productos)
+  return (
+     
       <>
-        <ul>
-          <li>{producto.title}</li>
-          <li>{producto.cpu}</li>
-          <li>{producto.descripcion}</li>
-          <img src="https://http2.mlstatic.com/D_NQ_NP_846590-MLA43418472875_092020-O.webp"></img>
+
+        <ul>         
+          <li>{productos.title}</li>
+          <li>{productos.cpu}</li>
+          <li>{productos.descripcion}</li>
+          <img src= {productos.picture}/>
         </ul>
       </>
     );

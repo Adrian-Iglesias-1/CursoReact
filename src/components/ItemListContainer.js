@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 import { useEffect, useState } from 'react'
-
+import {useParams} from 'react-router-dom'
 
 
 
@@ -12,17 +12,22 @@ function ItemListContainer() {
     
     let [ items, setItems] = useState([])  
    
+    
+
     useEffect (()=>{
 
         
        
         const promesa = new Promise ((res,b) =>{
+           
+                
+           
             setTimeout(() =>{
                 console.log("termine el pedido")
                 res([{id:1, marca: "amd"},
                      {id:2, marca: "intel"}                          
-            ]) },2000)}
-        )
+            ]) },2000)
+        }, [])
        
        
            
