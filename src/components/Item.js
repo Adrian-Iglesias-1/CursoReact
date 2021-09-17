@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {Button} from 'react-bootstrap'
 
 
 
@@ -16,8 +17,8 @@ function Item({nombre, id}){
         
         <article className ="catalogo-item"> 
             
-            <li>{nombre}</li>
-            <Link to={`/item/${id}`}>Ver mas</Link>
+            <h2>{nombre}</h2>
+            <Link to={`/item/${id}`}><Button>Ver mas</Button></Link>
         </article>
     )
 }

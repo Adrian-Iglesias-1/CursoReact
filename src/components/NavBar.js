@@ -6,6 +6,7 @@ import {Link, BrowserRouter} from 'react-router-dom'
 
 
 function Navbar() {
+  
     return (
       <header id="main-header">
         <Link to="/">
@@ -17,7 +18,7 @@ function Navbar() {
           <Link to="/" className="nav-link">Inicio</Link>
           </Nav.Item>
           <Nav.Item>
-          <Link to="/category/1" className="nav-link">Componentes</Link>
+          <Link to={`/category/1`} className="nav-link">Componentes</Link>
           </Nav.Item>
           <Nav.Item>
           <Link to="/category/2" className="nav-link">PC armardas</Link>

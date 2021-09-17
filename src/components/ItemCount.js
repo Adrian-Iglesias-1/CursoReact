@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 function ItemCount({ stock, inicial, onAdd }) {
-  let [contador, setContador] = useState(inicial);
+  const [contador, setContador] = useState(inicial);
 
   const sumar = () => {
     if (contador < stock) {

@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 import { useEffect, useState } from 'react'
-import {useParams} from 'react-router-dom'
+
 
 
 
@@ -24,8 +24,8 @@ function ItemListContainer() {
            
             setTimeout(() =>{
                 console.log("termine el pedido")
-                res([{id:1, marca: "amd"},
-                     {id:2, marca: "intel"}                          
+                res([{id:1, marca: "Amd"},
+                     {id:2, marca: "Intel"}                          
             ]) },2000)
         }, [])
        
