@@ -22,8 +22,8 @@ const ItemDetail = ({productos}) => {
       <h2>{productos.cpu} - ${productos.price}</h2>
       <p>{productos.descripcion}</p>
       <img src={productos.picture} />
-      <ItemCount  inicial ={1} stock={productos.stock} onAdd={(onAdd)} />   
-      {button ? <Link to="/cart"><Button>Ir al carro</Button></Link> : <ItemCount />} 
+        
+      {button ? <Link to="/cart"><Button className="mt-5">Ir al carro</Button></Link> :  <ItemCount  inicial ={1} stock={productos.stock} onAdd={(onAdd)} />} 
       </>
      
   );

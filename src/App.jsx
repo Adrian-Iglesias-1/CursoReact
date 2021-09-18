@@ -5,7 +5,7 @@ import "./estilos.css"
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import CartWidget from './components/CartWidget';
+
 
 
 
