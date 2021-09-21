@@ -24,8 +24,8 @@ function ItemListContainer() {
            
             setTimeout(() =>{
                 console.log("termine el pedido")
-                res([{id:1, marca: "Amd"},
-                     {id:2, marca: "Intel"}                          
+                res([{id:1, picture: "https://www.profesionalreview.com/wp-content/uploads/2014/08/amd-logo-2014.jpg"},
+                     {id:2, picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPh_apnzQgviLO_zA361pmUJ6588VQj-dR26bgkoMzXFTJ3FIXyumyTihE0tr70Uhez1g&usqp=CAU"}                          
             ]) },2000)
         }, [])
        

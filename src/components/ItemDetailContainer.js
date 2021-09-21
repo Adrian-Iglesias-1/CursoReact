@@ -2,8 +2,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import ItemDetail from "./ItemDetail";
-
-
+import Layout from "./Layout";
 const ItemDetailContainer = () => {
 
     const [producto,setProducto] = useState([])
@@ -41,17 +40,23 @@ const ItemDetailContainer = () => {
             filtro = arr.find((item)=> (item.id) === parseInt(id))
              
             setProducto(filtro)}
+            else{
+                setProducto(filtro)
+            }
+            
               
           
         })
+        
         })
 
     
     
     return ( 
-        <><ItemDetail productos={producto} />
        
-        </>
+        <ItemDetail productos={producto} />
+       
+        
     );
     
 }

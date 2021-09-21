@@ -14,7 +14,7 @@ function ItemList( {items} ) {
         
         <>
         
-        {items.map(item => <Item id={item.id} nombre={item.marca} />)}
+        {items.map(item => <Item id={item.id} nombre={item.picture} />)}
         
         
        
